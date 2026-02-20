@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IIST Admissions 2026 | Indian Institute of Space Science and Technology</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a href="#home" class="brand">IIST Admissions</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="nav" id="navMenu">
+        <a href="#programs">Programs</a>
+        <a href="#eligibility">Eligibility</a>
+        <a href="#dates">Important Dates</a>
+        <a href="#apply">Apply</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="pill">Admissions Open 2026</span>
+          <h1>Join IIST and build your future in Space Science & Engineering</h1>
+          <p>Apply for undergraduate and postgraduate programs with strong academic rigor, research facilities, and career pathways in India’s space ecosystem.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#apply">Start Application</a>
+            <a class="btn btn-outline" href="#dates">View Schedule</a>
+          </div>
+        </div>
+        <aside class="hero-card">
+          <h3>Admission Highlights</h3>
+          <ul>
+            <li>B.Tech, Dual Degree, M.Tech, and Ph.D. tracks</li>
+            <li>Merit-based admission through qualifying exams</li>
+            <li>Scholarship opportunities for eligible students</li>
+            <li>State-of-the-art labs and research mentorship</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="programs">
+      <div class="container">
+        <h2>Programs Offered</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>B.Tech Aerospace Engineering</h3>
+            <p>Focused on aerodynamics, propulsion, structures, and flight systems.</p>
+          </article>
+          <article class="card">
+            <h3>B.Tech Avionics</h3>
+            <p>Specialized curriculum in electronics, communication, and control systems.</p>
+          </article>
+          <article class="card">
+            <h3>PG & Research Programs</h3>
+            <p>M.Tech and doctoral programs in advanced space and interdisciplinary domains.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="eligibility">
+      <div class="container">
+        <h2>Eligibility Criteria</h2>
+        <div class="two-col">
+          <div class="card">
+            <h3>For Undergraduate Programs</h3>
+            <ul>
+              <li>Completed Class 12 with Physics, Chemistry, and Mathematics</li>
+              <li>Valid national-level entrance examination score</li>
+              <li>Minimum aggregate marks as per current admission brochure</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>For PG / Ph.D. Programs</h3>
+            <ul>
+              <li>Relevant bachelor’s/master’s degree from recognized institution</li>
+              <li>Valid GATE / equivalent qualification where applicable</li>
+              <li>Additional interview or written test for selected departments</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="dates">
+      <div class="container">
+        <h2>Important Dates</h2>
+        <div class="timeline">
+          <div class="timeline-item"><strong>Application Start:</strong> 15 March 2026</div>
+          <div class="timeline-item"><strong>Last Date to Apply:</strong> 30 April 2026</div>
+          <div class="timeline-item"><strong>Document Verification:</strong> May 2026</div>
+          <div class="timeline-item"><strong>Seat Allotment:</strong> June 2026</div>
+          <div class="timeline-item"><strong>Academic Session Begins:</strong> July 2026</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="apply">
+      <div class="container apply-grid">
+        <div class="card">
+          <h2>Application Enquiry Form</h2>
+          <p>Fill this form and our admission support team will contact you.</p>
+          <form id="admissionForm" novalidate>
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" required>
+
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" required>
+
+            <label for="program">Program Interest</label>
+            <select id="program" name="program" required>
+              <option value="">Select Program</option>
+              <option value="B.Tech Aerospace">B.Tech Aerospace Engineering</option>
+              <option value="B.Tech Avionics">B.Tech Avionics</option>
+              <option value="M.Tech">M.Tech</option>
+              <option value="Ph.D.">Ph.D.</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Ask about eligibility, fee, hostel, etc."></textarea>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Submit Enquiry</button>
+              <button type="reset" class="btn btn-outline">Reset</button>
+            </div>
+            <p id="formStatus" class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <aside class="card">
+          <h3>Admission Helpdesk</h3>
+          <p><strong>Email:</strong> admissions@iist.ac.in</p>
+          <p><strong>Phone:</strong> +91 471 256 1111</p>
+          <p><strong>Address:</strong> IIST, Valiamala, Thiruvananthapuram, Kerala</p>
+          <p>Need quick assistance? Use the chat assistant at the bottom-right corner.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> IIST Admissions Portal. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet">
+  <script type="module">
+    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+    createChat({
+      webhookUrl: 'https://aibhavesh.app.n8n.cloud/webhook/6e451079-13a3-43cd-b591-873e8b4dd8aa/chat',
+      webhookConfig: {
+        method: 'POST',
+        headers: {}
+      },
+      mode: 'window',
+      chatInputKey: 'chatInput',
+      chatSessionKey: 'sessionId',
+      loadPreviousSession: true,
+      metadata: {},
+      showWelcomeScreen: false,
+      defaultLanguage: 'en',
+      initialMessages: [
+        'Hi there!',
+        'My name is bhavesh . How can I assist you today?'
+      ],
+      i18n: {
+        en: {
+          title: 'Hi there!',
+          subtitle: "Start a chat. We're here to help you 24/7.",
+          footer: '',
+          getStarted: 'New Conversation',
+          inputPlaceholder: 'Type your question..'
+        }
+      },
+      enableStreaming: false
+    });
+  </script>
+</body>
+</html>
